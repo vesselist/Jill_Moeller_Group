@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-color: #80604a;
+    --light-color: #c2af90;
+    --dark-color: #453522;
+    --accent-color: #6e6e41;
+    --interaction-color: #a0936b;
+    --header-background-color: #755842;
+    --background-color: #907350;
+    --text-color: #503431;
+    --text-light-color: #ecb984;
+  }
+  
+  body {
+    .ubuntu-font {
+      font-family: "Ubuntu Condensed", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1.5;
+    }
+  
+    .raleway-font {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+  
+    .sen-font {
+      font-family: "Sen", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+  
+    .oxanium-font {
+      font-family: "Oxanium", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+  
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+  
+    ul {
+      list-style: none;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+    
+  }
+  
+  /*navbar*/
+  .navbar {
+    background: var(--header-background-color);
+    padding: 20px;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .main-menu ul {
+    display: flex;
+  }
+  
+  .navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a:hover {
+    color:var(--interaction-color);
+  }
+  
+  .navbar ul li a i {
+    margin-right: 5px;
+  }
+  
+  /*hero*/
+  .hero {
+    margin-bottom: 50px;
+  }
+  
+  .hero .container {
+    background: url('../images/transparent-shovel-icon.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .hero .hero-heading {
+    width: 90%;
+  }
+  
+  .hero .hero-text {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  
+  .hero .hero-buttons a {
+    margin-left: 0; 
+  }
+  
+  .hero .hero-buttons i {
+    margin-right: 5px;
+  }
+  
+  /*utility classes*/
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .bg-primary {
+    background: var(--background-color);
+    padding: 20px;
+  }
+  
+  /*buttons*/
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: var(--text-light-color);
+    font-weight: 800;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-light {
+    background: var(--light-color);
+    color: var(--text-color);
+  }
+  
+  .btn-dark {
+    background: var(--dark-color);
+    color: var(--text-light-color);
+  }
+  
+  .btn-navbar {
+    background: var(--dark-color);
+    color: var(--text-light-color);
+    border-radius: 20px;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  /*text classes*/
+  
+  .text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+    color: var(--text-color);
+    font: raleway-stand;
+  }
+  
+  .text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+    color: var(--text-color);
+  }
+  
+  .text-large {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+    color: var(--text-color);
+  }
+  
+  .text-med {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+    color: var(--text-color);
+  }
+  
+  .text-small {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+    color: var(--text-color);
+  }
+  
+  .text-xs {
+    font-size: 0.4rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+    color: var(--text-color);
+  }
+  
+  .text-center {
+    text-align: center;
+  }
